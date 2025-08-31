@@ -18,7 +18,6 @@ A lightweight Laravel module for managing and displaying service providers with 
 - **Frontend**: Vue.js 3 SPA with Tailwind CSS
 - **Performance**: Redis caching, eager loading, lazy image loading
 - **Testing**: PHPUnit with feature and unit tests
-- **Containerization**: Docker with Nginx + PHP-FPM
 
 ## Installation
 
