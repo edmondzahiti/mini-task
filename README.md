@@ -78,9 +78,17 @@ A lightweight Laravel module for managing and displaying service providers with 
 
 ### Architecture
 - **MVC Pattern**: Clean separation of concerns with dedicated controllers and models
+- **Repository Pattern**: Data access abstraction through dedicated repository classes
+- **Service Layer**: Business logic encapsulation in service classes
+- **Controller Layer**: HTTP request handling and response formatting
 - **Eloquent ORM**: Leveraging Laravel's powerful ORM with relationships and scopes
 - **Route Model Binding**: Automatic model resolution via slugs for clean URLs
-- **Service Layer**: Controllers handle HTTP concerns, models handle business logic
+
+### Layer Responsibilities
+- **Controllers** (`app/Http/Controllers/`): Handle HTTP requests, validate input, and return responses
+- **Services** (`app/Services/`): Contain business logic, orchestrate operations between repositories
+- **Repositories** (`app/Repositories/`): Abstract data access, provide clean interfaces for database operations
+- **Models** (`app/Models/`): Define relationships, scopes, and basic model functionality
 
 ## API Endpoints
 
